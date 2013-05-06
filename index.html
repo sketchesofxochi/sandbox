@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+	<title>nick de cesare | front end web developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+    $("#aboutLink").click(function() {
+    	$("#contain>section").hide();
+    	$("#about").show();
+    });
+    $("#workLink").click(function() {
+    	$("#contain>section").hide();
+    	$("#work").show();
+    });
+     $("#contactLink").click(function() {
+    	$("#contain>section").hide();
+    	$("#contact").show();
+    });
+
+$('#media').hover(function() {
+		$(this).animate({
+			marginRight: '+=185px'
+		}, 'fast'); },
+		function() {
+			$(this).animate({
+				marginRight: '-=185px'
+			}, 'fast');
+
+		});
+
+});
+
+	
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="Images/logo.png" />
+		<section id="media"><a href="http://www.facebook.com/sketchesofxochi"><img src="Images/facebook.png" /></a><a href="https://github.com/sketchesofxochi/sandbox"><img src="Images/gitcat.png" /></a></section>
+		<span id="a">sketchesofxochi.com</span>
+		<span id="b">nick de cesare</span>
+		<span id="c">front-end web developer</span>
+		
+	</header>
+	<div id="wrapper">
+	<section id="navLine">
+		<nav>
+			<ul>
+				<li><a href="#" id="aboutLink">about</a></li>
+				<li><a href="#" id="workLink">work</a></li>
+				<li><a href="#" id="contactLink">contact</a></li>
+			</ul>
+		</nav>
+	</section>
+	<div id="contain">
+	<section id="firstContent">
+	<p>hi.  my name is nick.  i build websites and simple, easy-to-use interfaces.</p>
+</section>
+
+<section id="about">
+
+	<div id="imgCont">
+	</div>
+	<div id="info">
+		<p>born: duluth, minnesota</p>
+		<p>grew up: houston, texas</p>
+		<p>where you'll find me now: in front of a computer in austin, texas</p>
+		<p>undergrad: bm, music history and literature, university of north texas, gpa: 3.79</p>
+		<p>grad: ma, ethnomusicology, kent state university, gpa: 4.0</p>
+		<p>professional interests: front-end web/ui development, javascript, linux administration</p>
+		<p>skills: (x)html(5), css, javascript/jquery, wordpress, some php</p>
+
+		<p>other interests: linux, apache, mysql, php, ruby/rails, backbone.js, node.js</p>
+
+		<p>what i'm doing when i'm not on the internet:  bicycling, napping, exploring new places.</p>
+	</div>
+</section>
+<section id="work">
+	<a href="http://www.brokenrecordsaustin.com"><img src="Images/brecords.png" /></a>
+	<a href="http://www.thecreamymiddles.com"><img src="Images/creamy.png" /></a>
+	<a href="http://www.digatx.com"><img src="Images/digatx.png" /></a>
+	<a href="http://blogs.catapultsystems.com"><img src="Images/catblogs.png" /></a>
+	</section>
+<section id="contact">
+<p>phone: 214-679-7475</p>
+<p>email: nick.a.decesare at gmail dot com</p>
+</section>
+</div><!--/contain-->
+</div><!--/wrapper-->
+
+	<footer>
+		<p>&copy; 2013 nick de cesare.  all rights reserved.  all wrongs reversed.</p>
+	</footer>
+</body>
+</html>
